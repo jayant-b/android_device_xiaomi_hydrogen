@@ -20,17 +20,26 @@ LOCAL_SRC_FILES := media/libstagefright/foundation/MediaBuffer.cpp
 LOCAL_SHARED_LIBRARIES := libstagefright_foundation libui libgui
 LOCAL_CFLAGS := -Wno-unused-private-field
 LOCAL_MODULE := libshims_ims
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := 64
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := get_process_name.c
 LOCAL_MODULE := libshims_get_process_name
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := 64
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := rild_socket.c
-LOCAL_MODULE := rild_socket
+LOCAL_MODULE := libshims_rild_socket
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := 64
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)

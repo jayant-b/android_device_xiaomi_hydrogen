@@ -52,7 +52,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshims_ims \
     libshims_get_process_name \
-    rild_socket
+    libshims_rild_socket
 
 # Ramdisk
 PRODUCT_PACKAGES += \

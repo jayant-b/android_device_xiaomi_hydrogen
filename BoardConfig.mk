@@ -23,9 +23,9 @@ TARGET_OTA_ASSERT_DEVICE := hydrogen
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /system/vendor/lib64/lib-imsvt.so|libshims_ims.so \
-    /system/vendor/lib64/libizat_core.so|libshims_get_process_name.so \
-    /system/vendor/lib64/libril-qc-qmi-1.so|rild_socket.so
+    /vendor/lib64/lib-imsvt.so|/vendor/lib64/libshims_ims.so \
+    /vendor/lib64/libizat_core.so|/vendor/lib64/libshims_get_process_name.so \
+    /vendor/lib64/libril-qc-qmi-1.so|/vendor/lib64/libshims_rild_socket.so
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
