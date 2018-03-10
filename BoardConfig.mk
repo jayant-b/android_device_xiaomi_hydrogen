@@ -27,9 +27,6 @@ TARGET_LD_SHIM_LIBS := \
     /vendor/lib64/libizat_core.so|/vendor/lib64/libshims_get_process_name.so \
     /vendor/lib64/libril-qc-qmi-1.so|/vendor/lib64/libshims_rild_socket.so
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
-
 # Filesystem
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 26705099776 # 26705116160 - 16384
