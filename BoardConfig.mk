@@ -21,12 +21,6 @@ DEVICE_PATH := device/xiaomi/hydrogen
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := hydrogen
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /vendor/lib64/lib-imsvt.so|/vendor/lib64/libshims_ims.so \
-    /vendor/lib64/libizat_core.so|/vendor/lib64/libshims_get_process_name.so \
-    /vendor/lib64/libril-qc-qmi-1.so|/vendor/lib64/libshims_rild_socket.so
-
 # Filesystem
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 26705099776 # 26705116160 - 16384

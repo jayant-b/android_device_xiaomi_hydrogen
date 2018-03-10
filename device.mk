@@ -27,12 +27,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/hydrogen/hydrogen-vendor.mk)
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
-# Shims
-PRODUCT_PACKAGES += \
-    libshims_ims \
-    libshims_get_process_name \
-    libshims_rild_socket
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.target.rc
