@@ -21,6 +21,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/hydrogen/hydrogen-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# CPU congiguration    
+PRODUCT_PACKAGES += \
+    cpu.conf
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.qcom.power.rc
