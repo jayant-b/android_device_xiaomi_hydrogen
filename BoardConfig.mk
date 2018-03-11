@@ -18,22 +18,8 @@
 
 DEVICE_PATH := device/xiaomi/hydrogen
 
-# Assertions
+# Assert
 TARGET_OTA_ASSERT_DEVICE := hydrogen
-
-# Filesystem
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 26705099776 # 26705116160 - 16384
-
-# Kernel
-TARGET_KERNEL_CONFIG := lineageos_hydrogen_defconfig
-
-WITH_AICP_CHARGER := false
-WITH_LINEAGE_CHARGER := false
-BOARD_USES_CYANOGEN_HARDWARE := true
-
-# Tap-to-Wake
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # inherit from the proprietary version
 -include vendor/xiaomi/hydrogen/BoardConfigVendor.mk

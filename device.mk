@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-# call the proprietary setup
+# Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/hydrogen/hydrogen-vendor.mk)
 
 # Overlays

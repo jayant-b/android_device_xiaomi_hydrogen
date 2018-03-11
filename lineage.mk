@@ -15,12 +15,17 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/xiaomi/hydrogen/full_hydrogen.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from hydrogen device
+$(call inherit-product, device/xiaomi/hydrogen/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Set those variables here to overwrite the inherited values.
+# Device identifier. This must come after all inclusions.
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := hydrogen
