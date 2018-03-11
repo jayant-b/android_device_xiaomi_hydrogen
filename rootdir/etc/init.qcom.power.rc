@@ -86,7 +86,7 @@ on charger
     write /sys/devices/system/cpu/cpu5/online 0
 
     # Enable thermal
-    write /sys/module/msm_thermal/core_control/enabled 1
+    start thermal-engine
 
     # Set perfd properties
     rm /data/system/perfd/default_values
