@@ -32,9 +32,6 @@ WITH_AICP_CHARGER := false
 WITH_LINEAGE_CHARGER := false
 BOARD_USES_CYANOGEN_HARDWARE := true
 
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
 # Tap-to-Wake
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
